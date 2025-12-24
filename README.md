@@ -62,39 +62,38 @@ Whether you're clearing out your fridge or searching for inspiration for your ne
    ```bash
    git clone https://github.com/yourusername/recipe_genie.git
    cd recipe_genie
-Install dependencies
-
-bash
-Copy code
+📦 Installation
+Install Dependencies
 flutter pub get
-Generate code
 
-bash
-Copy code
+Generate Code
 dart run build_runner build -d
-Configuration
+
+🔐 Configuration
+
 To enable AI features, a Google Gemini API Key is required.
 
 Obtain your API key from Google AI Studio
 
-Open lib/core/constants/api_constants.dart
+Open the following file:
+
+lib/core/constants/api_constants.dart
+
 
 Replace the placeholder value:
 
-dart
-Copy code
 static const String geminiApiKey = 'YOUR_API_KEY_HERE';
-For production usage, it is recommended to use environment variables or a secure backend proxy to protect your API key.
 
-Running the App
-bash
-Copy code
+
+⚠️ For production usage, it is strongly recommended to use environment variables or a secure backend proxy to protect your API key.
+
+▶️ Running the App
 flutter run
+
 📂 Project Structure
+
 The project follows a Clean Architecture approach:
 
-powershell
-Copy code
 lib/
 ├── core/                # Shared utilities, themes, constants, errors
 ├── features/            # Feature-based modules (Vision, Recipe, Splash)
@@ -103,15 +102,26 @@ lib/
 │   └── presentation/   # UI (Pages, Widgets) & State (Riverpod)
 ├── l10n/                # Localization files (ARB)
 └── main.dart            # Application entry point
+
 🤝 Contributing
+
 Contributions are welcome and appreciated.
 
 Fork the repository
 
-Create your feature branch (git checkout -b feature/AmazingFeature)
+Create your feature branch
 
-Commit your changes (git commit -m 'Add AmazingFeature')
+git checkout -b feature/AmazingFeature
 
-Push to the branch (git push origin feature/AmazingFeature)
+
+Commit your changes
+
+git commit -m "Add AmazingFeature"
+
+
+Push to the branch
+
+git push origin feature/AmazingFeature
+
 
 Open a Pull Request
