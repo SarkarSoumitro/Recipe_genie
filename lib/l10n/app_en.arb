@@ -1,0 +1,23 @@
+{
+  "appTitle": "Recipe Genie",
+  "camera": "Camera",
+  "gallery": "Gallery",
+  "findIngredients": "Find Ingredients",
+  "foundIngredients": "Found Ingredients",
+  "generateRecipes": "Generate Recipes",
+  "emptyStateMessage": "Your fridge is a canvas...",
+  "emptyStateSubMessage": "Tap camera to find paint (ingredients)!",
+  "settings": "Settings",
+  "language": "Language",
+  "recipes": "Recipes",
+  "ingredients": "Ingredients",
+  "instructions": "Instructions",
+  "calories": "kcal",
+  "minutes": "mins",
+  "easy": "Easy",
+  "medium": "Medium",
+  "hard": "Hard",
+  "error": "Error",
+  "noRecipesFound": "No recipes found.",
+  "chefsSelection": "Chef's Selection"
+}

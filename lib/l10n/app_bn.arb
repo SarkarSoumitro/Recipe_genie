@@ -1,0 +1,23 @@
+{
+  "appTitle": "রেসিপি জিনি",
+  "camera": "ক্যামেরা",
+  "gallery": "গ্যালারি",
+  "findIngredients": "উপকরণ খুঁজুন",
+  "foundIngredients": "পাওয়া উপকরণগুলো",
+  "generateRecipes": "রেসিপি তৈরি করুন",
+  "emptyStateMessage": "আপনার ফ্রিজ একটি ক্যানভাস...",
+  "emptyStateSubMessage": "উপকরণ খুঁজতে ক্যামেরা ট্যাপ করুন!",
+  "settings": "সেটিংস",
+  "language": "ভাষা",
+  "recipes": "রেসিপি",
+  "ingredients": "উপকরণ",
+  "instructions": "নির্দেশনা",
+  "calories": "ক্যালোরি",
+  "minutes": "মিনিট",
+  "easy": "সহজ",
+  "medium": "মাঝারি",
+  "hard": "কঠিন",
+  "error": "ত্রুটি",
+  "noRecipesFound": "কোনো রেসিপি পাওয়া যায়নি।",
+  "chefsSelection": "শেফের পছন্দ"
+}
