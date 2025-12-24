@@ -56,72 +56,61 @@ Whether you're clearing out your fridge or searching for inspiration for your ne
 
 ---
 
-### Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/recipe_genie.git
+    cd recipe_genie
+    ```
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/recipe_genie.git
-   cd recipe_genie
-📦 Installation
-Install Dependencies
-flutter pub get
+2.  **Install dependencies:**
+    ```bash
+    flutter pub get
+    ```
 
-Generate Code
-dart run build_runner build -d
+3.  **Generate code (if needed):**
+    ```bash
+    dart run build_runner build -d
+    ```
 
-🔐 Configuration
+### Configuration
 
-To enable AI features, a Google Gemini API Key is required.
+To use the AI features, you need a Google Gemini API Key.
 
-Obtain your API key from Google AI Studio
+1.  Get your API key from [Google AI Studio](https://aistudio.google.com/).
+2.  Open `lib/core/constants/api_constants.dart`.
+3.  Replace the placeholder with your actual key:
+    ```dart
+    static const String geminiApiKey = 'YOUR_API_KEY_HERE';
+    ```
+    *(Note: For production, it is recommended to use environment variables or a secure backend proxy to hide your API key.)*
 
-Open the following file:
+### Running the App
 
-lib/core/constants/api_constants.dart
-
-
-Replace the placeholder value:
-
-static const String geminiApiKey = 'YOUR_API_KEY_HERE';
-
-
-⚠️ For production usage, it is strongly recommended to use environment variables or a secure backend proxy to protect your API key.
-
-▶️ Running the App
+```bash
 flutter run
+```
 
-📂 Project Structure
+## 📂 Project Structure
 
-The project follows a Clean Architecture approach:
+The project follows a **Clean Architecture** pattern:
 
+```
 lib/
-├── core/                # Shared utilities, themes, constants, errors
-├── features/            # Feature-based modules (Vision, Recipe, Splash)
-│   ├── data/            # API implementations, models, repositories
-│   ├── domain/          # Entities, abstract repositories, use cases
-│   └── presentation/   # UI (Pages, Widgets) & State (Riverpod)
-├── l10n/                # Localization files (ARB)
-└── main.dart            # Application entry point
+├── core/           # Shared utilities, theme, constants, and errors
+├── features/       # Feature-based modules (Vision, Recipe, Splash)
+│   ├── data/       # API implementation, models, repositories
+│   ├── domain/     # Entities, abstract repositories, use cases
+│   └── presentation/ # UI (Pages, Widgets) and State (Riverpod)
+├── l10n/           # Localization files (ARB)
+└── main.dart       # Entry point
+```
 
-🤝 Contributing
+## 🤝 Contributing
 
-Contributions are welcome and appreciated.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Fork the repository
-
-Create your feature branch
-
-git checkout -b feature/AmazingFeature
-
-
-Commit your changes
-
-git commit -m "Add AmazingFeature"
-
-
-Push to the branch
-
-git push origin feature/AmazingFeature
-
-
-Open a Pull Request
+1.  Fork the project
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
